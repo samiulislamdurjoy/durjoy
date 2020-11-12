@@ -34,23 +34,16 @@ void enqueue(int val)
 int dequeue()
 {
     int val=-1;
-    //struct node * ptr = f ;
+    struct node * ptr = f ;
     if(f==NULL)
     {
         printf("The queue is empty.\n");
     }
     else
     {
-        /*f=f->next;
-        val=ptr->data;
-        free(ptr);*/
-
-        /*alternative code is*/
-
-        val=f->data;
         f=f->next;
-
-
+        val=ptr->data;
+        free(ptr);
     }
     return val;
 }
