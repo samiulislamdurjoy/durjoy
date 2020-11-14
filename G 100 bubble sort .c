@@ -44,6 +44,7 @@ int main()
     int n=sizeof(A)/sizeof(int);
     printf("%d\n",n);
     BubbleSort(A,n);
+    printf("\n\n Note Note : \n For bubble sort, the only worst case is, when the smallest element (in the unsorted array )is in the last index of the array.\n\n");
     return 0;
 }
 
